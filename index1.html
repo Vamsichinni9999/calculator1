@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: black; /* Light gray background */
+    }
+
+    #iframeContainer {
+      width: 350px;
+      height: 430px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      background-color: #ffffff; /* White background for the iframe container */
+    }
+
+    #dialogFlowFrame {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="iframeContainer">
+    <iframe
+      id="dialogFlowFrame"
+      allow="microphone;"
+      src="https://console.dialogflow.com/api-client/demo/embedded/ef50dcb1-b60e-4a73-b6ed-7e446a2ce6c7">
+    </iframe>
+  </div>
+</body>
+</html>
